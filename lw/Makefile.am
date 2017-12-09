@@ -1,4 +1,4 @@
-AM_CPPFLAGS = $(all_includes) $(LWP_CFLAGS)
+AM_CPPFLAGS = $(all_includes) $(LWP_CFLAGS) -fno-stack-protector
 AM_LDFLAGS = -lm
 
 noinst_LTLIBRARIES = liblorawan.la
